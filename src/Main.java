@@ -11,28 +11,32 @@ public class Main {
 		
 		boolean collectpath = true;
 		
-		System.out.print("¾ÆÀÌµğ : ");
+		System.out.print("ì•„ì´ë”” : ");
 		String id = br.readLine();
 	
-		System.out.print("ºñ¹Ğ¹øÈ£ : ");
+		System.out.print("ë¹„ë°€ë²ˆí˜¸ : ");
 		String passwd = br.readLine();
 		System.out.println();
 	while(collectpath) {
-		if( id != null && passwd != null) { //¾ÆÀÌµğºñ¹Ğ¹øÈ£ ÀÏÄ¡ È®ÀÎ
-			System.out.println("1.ÇĞÀû");
-			System.out.println("2.¼ºÀû");
-			System.out.println("3.°­ÀÇ");
-			System.out.println("4.°ü¸®");
-			System.out.println("5.Á¾·á");
-			System.out.println("----------¿øÇÏ´Â ¸ñ·ÏÀ» ¼±ÅÃÇØÁÖ¼¼¿ä.----------");
+		if( id != null && passwd != null) { //ì•„ì´ë””ë¹„ë°€ë²ˆí˜¸ ì¼ì¹˜ í™•ì¸
+			System.out.println("1.í•™ì ");
+			System.out.println("2.ì„±ì ");
+			System.out.println("3.ê°•ì˜");
+			System.out.println("4.ê´€ë¦¬");
+			System.out.println("5.ì¢…ë£Œ");
+			System.out.println("----------ì›í•˜ëŠ” ëª©ë¡ì„ ì„ íƒí•´ì£¼ì„¸ìš”.----------");
 			int selectnum = Integer.parseInt(br.readLine());
 			
 			
 			switch( selectnum) {
 				case 1:
-					System.out.println("");
+					System.out.println("1. í•™ì  ë“±ë¡");
+					System.out.println("2. í•™ì  ìˆ˜ì •");
+					System.out.println("3. í•™ì  ì‚­ì œ");
+					System.out.println("4. ê°œì¸ì •ë³´ ë“±ë¡, ìˆ˜ì •"); // ë“¤ì–´ê°€ë©´ íœ´ë³µí•™ë„
 					break;
 				case 2:
+					System.out.println();
 					break;
 				case 3:
 					break;
@@ -42,7 +46,7 @@ public class Main {
 					collectpath = false;
 					break;
 				default:
-					System.out.println("Àß¸øµÈ ¸ñ·ÏÀ» ¼±ÅÃÇÏ¿´½À´Ï´Ù.");
+					System.out.println("ì˜ëª»ëœ ëª©ë¡ì„ ì„ íƒí•˜ì˜€ìŠµë‹ˆë‹¤.");
 					break;
 				}
 				
